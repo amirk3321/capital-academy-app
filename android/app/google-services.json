@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "698225978083",
+    "firebase_url": "https://capital-academy-f8f59.firebaseio.com",
+    "project_id": "capital-academy-f8f59",
+    "storage_bucket": "capital-academy-f8f59.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:698225978083:android:af2426596a2d3c60",
+        "android_client_info": {
+          "package_name": "com.example.capital_academy_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "698225978083-v9susf98momtih8bs08hamihnv64bq70.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAUWQtvBsWD38TTeTzisbqZTx2ioOoYtb4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "698225978083-v9susf98momtih8bs08hamihnv64bq70.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
