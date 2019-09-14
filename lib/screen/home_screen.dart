@@ -1,11 +1,8 @@
 import 'package:capital_academy_app/bloc/authentication/bloc.dart';
 import 'package:capital_academy_app/bloc/user/user_bloc.dart';
 import 'package:capital_academy_app/bloc/user/user_state.dart';
-import 'package:capital_academy_app/model/user.dart';
 import 'package:capital_academy_app/screen/home/profile_page.dart';
-import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
-
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 import 'home/page_model.dart';

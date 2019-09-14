@@ -1,3 +1,5 @@
+import 'package:capital_academy_app/model/text_message.dart';
+import 'package:capital_academy_app/model/text_message_entity.dart';
 import 'package:capital_academy_app/model/user.dart';
 import 'package:equatable/equatable.dart';
 import 'package:meta/meta.dart';
@@ -45,4 +47,29 @@ class UsersUpdated extends UserEvent {
 
   @override
   String toString() => 'UsersUpdated';
+}
+
+class UserItemListOnPressed extends UserEvent{
+  final String otherUserId;
+
+  UserItemListOnPressed({this.otherUserId}) :super([otherUserId]);
+  @override
+  String toString() => 'UserItemListOnPressed';
+}
+
+class SendTextMessage extends UserEvent{
+  final TextMessageEntity textMessageEntity;
+
+  SendTextMessage({this.textMessageEntity}) :super([textMessageEntity]);
+
+  @override
+  String toString() => 'SendMessageEvent';
+}
+
+class TextMessagesUpdated extends UserEvent{
+  final List<TextMessage> messages;
+  TextMessagesUpdated({this.messages}) : super([messages]);
+
+  @override
+  String toString() => "TextMessagesUpdated";
 }

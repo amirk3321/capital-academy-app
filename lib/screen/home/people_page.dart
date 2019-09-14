@@ -31,11 +31,17 @@ class PeoplePage extends StatelessWidget {
                     itemBuilder: (BuildContext context, int index) {
                       return GestureDetector(
                         onTap: (){
+                          BlocProvider.of<UserBloc>(context).dispatch(
+                              UserItemListOnPressed(
+                                otherUserId: users[index].uid
+                              )
+                          );
                           Navigator.push(context, MaterialPageRoute(
                             builder: (_) => SingleUserChat(
-                              uid: users[index].uid,
+                              otherUid: users[index].uid,
                               name: users[index].name,
                               profile: users[index].profile,
+                              uid: uid,
                             )
                           ));
                         },
